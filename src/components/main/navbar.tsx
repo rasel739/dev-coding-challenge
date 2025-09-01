@@ -33,24 +33,20 @@ const Navbar = () => {
         </div>
 
         <div className='hidden md:flex justify-end items-center gap-3'>
-          <Button
-            title='Login'
-            className='px-4 py-2 rounded-md font-semibold text-white/90 hover:bg-white/10 transition'
-          ></Button>
-          <Button
-            title='Sign up'
-            className='px-4 py-2 rounded-md bg-[#7F56D9] text-white/90 font-semibold shadow'
-          />
+          <Button title='Login' variant='ghost' size='md' />
+          <Button title='Sign up' variant='primary' size='md' />
         </div>
 
         <div className='flex justify-end md:hidden z-20'>
-          <button
+          <Button
+            title=''
             aria-label='Toggle menu'
-            onClick={() => setMenuOpen((v) => !v)}
-            className='p-2 rounded-md text-white/95 focus:outline-none focus:ring-2 focus:ring-white/30'
-          >
-            <Icons.Menu size={24} />
-          </button>
+            variant='ghost'
+            size='sm'
+            onClick={() => setMenuOpen((t) => !t)}
+            icon={<Icons.Menu size={24} />}
+            className='p-2'
+          />
         </div>
       </div>
 
@@ -69,14 +65,8 @@ const Navbar = () => {
             ))}
 
             <div className='mt-2 flex gap-2'>
-              <Button
-                title='Login'
-                className='flex-1 px-4 py-2 rounded-md font-semibold text-white/90 hover:bg-white/10 transition'
-              />
-              <Button
-                title='Sign up'
-                className='flex-1 px-4 py-2 rounded-md bg-violet-600 text-white/90 font-semibold shadow'
-              />
+              <Button title='Login' variant='ghost' size='md' className='flex-1' />
+              <Button title='Sign up' variant='primary' size='md' className='flex-1' />
             </div>
           </div>
         </div>
