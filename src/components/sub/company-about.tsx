@@ -13,13 +13,16 @@ const CompanyAbout = () => {
 
           <div className='mt-6 w-full  flex flex-col md:flex-row justify-center md:items-center md:justify-start gap-3'>
             <Button
-              title=' Learn more'
-              className='order-2 md:order-1 px-5 py-2 rounded-md bg-white text-[#344054] font-semibold shadow hover:bg-gray-100 transition'
+              title='Learn more'
+              variant='secondary'
+              size='lg'
+              className='order-2 md:order-1'
             />
-
             <Button
               title='Get started'
-              className='order-1 md:order-2 px-5 py-2 bg-[#7F56D9] rounded-md  font-semibold  text-white hover:bg-white/10 transition'
+              variant='primary'
+              size='lg'
+              className='order-1 md:order-2'
             />
           </div>
         </div>

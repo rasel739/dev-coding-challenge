@@ -22,13 +22,12 @@ const Header = () => {
           <Button
             title='Demo'
             icon={<Image src='/img/play-video.png' width={24} height={24} alt='video-play-icon' />}
-            className='order-2 md:order-1 flex justify-center items-center gap-2 px-4 py-2 rounded-md bg-white text-[#344054] font-medium shadow'
+            variant='secondary'
+            size='md'
+            className='order-2 md:order-1'
           />
 
-          <Button
-            title='Sign up'
-            className='order-1 md:order-2 flex justify-center items-center gap-2 px-4 py-2 bg-[#7F56D9] rounded-md  text-white/90 font-semibold shadow'
-          />
+          <Button title='Sign up' variant='primary' size='md' className='order-1 md:order-2' />
         </div>
       </div>
       <div className='mt-20 md:mt-40'>
